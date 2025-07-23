@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+````markdown
+# 🐾 Beast Mode Tracker 💪
 
-## Project info
+An all-in-one productivity and mental growth companion. Track your tasks, journal your day, reflect with AI, and build discipline with nofap tracking.
 
-**URL**: https://lovable.dev/projects/7826da36-414e-479e-bf88-4c51ab35e688
+## 🌟 Features
+- ✅ Manual task tracker with completion and history
+- 📓 Daily journal with PDF export
+- 🤖 Reflection AI chatbot for self-improvement
+- 🔐 User authentication with sessions
+- 📈 Nofap history tracker
+- 🧠 Quote slider for daily motivation
 
-## How can I edit this code?
+## 🛠️ Tech Stack
+- **Frontend:** React.js
+- **Backend:** Node.js + Express
+- **Database:** MongoDB Atlas
+- **Authentication:** JWT & Sessions
+- **AI Chatbot:** ChatGPT Integration (Planned)
 
-There are several ways of editing your application.
+## 🚀 Getting Started Locally
 
-**Use Lovable**
+1. Clone the repo
+```bash
+git clone https://github.com/mohitarora1712/beastmodetracker.git
+cd beastmodetracker
+````
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7826da36-414e-479e-bf88-4c51ab35e688) and start prompting.
+2. Install dependencies
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+cd client
+npm install
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+cd ../server
+npm install
 ```
 
-**Edit a file directly in GitHub**
+3. Create `.env` files in both `client/` and `server/` with necessary credentials:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+* **Server .env**
 
-**Use GitHub Codespaces**
+  ```
+  PORT=5000
+  MONGO_URI=your_mongodb_uri
+  JWT_SECRET=your_jwt_secret
+  SESSION_SECRET=your_session_secret
+  ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* **Client .env**
 
-## What technologies are used for this project?
+  ```
+  REACT_APP_API_URL=http://localhost:5000
+  ```
 
-This project is built with:
+4. Run the project
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+# Start frontend
+cd client
+npm start
 
-## How can I deploy this project?
+# In another terminal, start backend
+cd server
+node index.js
+```
 
-Simply open [Lovable](https://lovable.dev/projects/7826da36-414e-479e-bf88-4c51ab35e688) and click on Share -> Publish.
+## 🌐 Deployment
 
-## Can I connect a custom domain to my Lovable project?
+Frontend: Vercel / Netlify
+Backend: Render / Railway
 
-Yes, you can!
+(Detailed deployment steps coming soon)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🤝 Contributing
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Pull requests are welcome. Let's build the ultimate self-improvement companion together.
+
+## 📄 License
+
+MIT
+
+```
+```
