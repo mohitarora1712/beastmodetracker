@@ -3,7 +3,8 @@ export const getTodayString = (): string => {
   return new Date().toISOString().split('T')[0];
 };
 
-const API = 'http://localhost:5000/api';
+const API = import.meta.env.VITE_API_URL + '/api';
+
 
 function getAuthHeaders() {
   const token = localStorage.getItem('token');
